@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<title>Athens-Lift</title>
+
+<style>
+                *{
+                margin:0;
+                padding:0;
+                }
+
+
+    html{
+        width:100%;
+        height:100%;
+        }
+
+        body{
+        width:100%;
+        height:100%;
+        }
+
+            .header{
+            position:relative;
+            width:100%;
+            height:8%;
+			background:url(images/mpara.png);
+			background-size:100% 100%;
+			background-repeat:no-repeat;
+            }
+
+            .content{
+            position:relative;
+            width:100%;
+            height:83%;
+			background:url(images/sky-back.png);
+			background-size:100% 100%;
+			background-repeat:no-repeat;
+            }
+            .row1{
+			position:fixed;
+			top: 19%;
+            width:100%;
+            height:97%;
+			overflow-y:scroll;
+            }
+            .footer{
+            position:relative;
+            width:100%;
+            height:9%;
+            }
+ </style>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+
+<script> 
+$(document).ready(function(){
+  $("#flipi").click(function(){
+    $("#paneli").slideToggle("slow");
+  });
+});
+</script>
+
+<script> 
+$(document).ready(function(){
+  $("#flip1").click(function(){
+    $("#panel1").slideToggle("slow");
+	$("#panel2").slideUp("slow");
+	$("#panel3").slideUp("slow");
+	$("#panel4").slideUp("slow");
+  });
+});
+</script>
+
+<script> 
+$(document).ready(function(){
+  $("#flip2").click(function(){
+    $("#panel2").slideToggle("slow");
+	$("#panel1").slideUp("slow");
+	$("#panel3").slideUp("slow");
+	$("#panel4").slideUp("slow");
+  });
+});
+</script>
+
+<script> 
+$(document).ready(function(){
+  $("#flip3").click(function(){
+    $("#panel3").slideToggle("slow");
+	$("#panel1").slideUp("slow");
+	$("#panel2").slideUp("slow");
+	$("#panel4").slideUp("slow");
+  });
+});
+</script>
+
+<script> 
+$(document).ready(function(){
+  $("#flip4").click(function(){
+    $("#panel4").slideToggle("slow");
+	$("#panel1").slideUp("slow");
+	$("#panel2").slideUp("slow");
+	$("#panel3").slideUp("slow");
+  });
+});
+</script>
+ 
+<style type="text/css"> 
+
+a:link {color:#FFFFFF; text-decoration:none;}
+a:visited {color:#FFFFFF;}
+a:active {color:#FF0000;}
+
+
+#flipi
+{
+width:40%;
+}
+
+#paneli
+{
+position:absolute;
+left:5px;	
+width:90%;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+color:white;
+font-size:large;
+padding:8px;
+display:none;
+background-color:#B2B2CC;
+border-top:solid 7px #7575A3;
+border-left:solid 7px #7575A3;
+border-right:solid 7px #7575A3;
+border-bottom:solid 7px #7575A3;
+box-shadow: 5px 5px 7px #14141F;
+border-radius:25px;
+z-index:+1;
+}
+
+
+#fliptop1
+{
+width:80%;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+color:white;
+padding:13px;
+font-size:x-large;
+text-align:left;
+background-color:#B2B2CC;
+border-top:solid 7px #8585AD;
+border-bottom:solid 7px #8585AD;
+}
+
+#fliptop2
+{
+width:80%;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+color:white;
+padding:13px;
+font-size:x-large;
+text-align:left;
+background-color:#B2B2CC;
+border-top:solid 7px #8585AD;
+border-bottom:solid 7px #8585AD;
+}
+
+#fliptop3
+{
+width:80%;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+color:white;
+padding:13px;
+font-size:x-large;
+text-align:left;
+background-color:#00CCCC;
+border-top:solid 7px #008080;
+border-bottom:solid 7px #008080;
+}
+
+
+#flip1
+{
+width:81%;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+color:white;
+padding:13px;
+font-size:x-large;
+text-align:left;
+background-color:#73AF37;
+border-top:solid 7px #507A26;
+border-bottom:solid 7px #507A26;
+}
+#panel1
+{
+width:81%;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+color:white;
+font-size:large;
+padding:8px;
+display:none;
+}
+
+#flip2
+{
+width:81%;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+color:white;
+padding:13px;
+text-align:left;
+font-size:x-large;
+background-color:#FF85D6;
+border-top:solid 7px #995080;
+border-bottom:solid 7px #995080;
+}
+#panel2
+{
+width:81%;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+color:white;
+font-size:large;
+padding:8px;
+display:none;
+}
+
+#flip3
+{
+width:81%;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+color:white;
+padding:13px;
+text-align:left;
+font-size:x-large;
+background-color:#CC0052;
+border-top:solid 7px #8F0039;
+border-bottom:solid 7px #8F0039;
+}
+#panel3
+{
+width:81%;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+color:white;
+font-size:large;
+padding:8px;
+display:none;
+}
+
+#flip4
+{
+width:81%;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+color:white;
+padding:13px;
+text-align:left;
+font-size:x-large;
+background-color:#A319D1;
+border-top:solid 7px #5B0E75;
+border-bottom:solid 7px #5B0E75;
+}
+#panel4
+{
+width:81%;
+margin-left:auto;
+margin-right:auto;
+margin-top:auto;
+margin-bottom:auto;
+color:white;
+font-size:large;
+padding:8px;
+display:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div  class="header">
+<center>
+<table width="92%" border="0">
+  <tr>
+    <td><div id="flipi"><img src="images/info.png" width="100" height="56" /></div></td>
+    <td><img src="images/transparent-small.png" width="99" height="40" /></td>
+  </tr>
+</table>
+</center>
+</div>
+
+  <div  class="content">
+  
+  <div id="paneli">
+  <center>
+  <br />
+  <h2><u>Πληροφορίες για το ασανσέρ.</u></h2>
+  <br /><br />
+  <img src="images/keimeno.png" width="80%"/>
+  <br /><br /><br />
+  <h3>Και άλλες πληροφορίες για το ασανσέρ.</h3>
+  <br /><br />
+  </center>
+  </div>
+ 
+  <center>
+	<table>
+	<tr>
+    <td>
+    <div id="fliptop1"><a href="information.html"><b>No Panic</b></a></div>
+    </td>
+    <td>
+	<div id="fliptop2"><a href="help.html"><b>Help</b></a></div>
+    </td>
+    <td>
+	<div id="fliptop3"><a href="manual.html"><b>Manual</b></a></div>
+    </td>
+    </tr>
+    </table>
+</center>
+    
+    <div  class="row1">
+    
+    <div id="flip1">1. Αρχική σελίδα.</div>
+<div id="panel1">Σε περίπτωση που μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα...</div>
+<br>
+<div id="flip2">2. Πληροφορίες.</div>
+
+<div id="panel2">Μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα...</div>
+
+<br>
+<div id="flip3">3. Πυροσβεστική.</div>
+
+<div id="panel3">Πρέπει να μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα...</div>
+
+<br>
+<div id="flip4">4. Εφημερίες.</div>
+
+<div id="panel4">Οδηγίες: μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα μπλα.</div>
+
+  </div>
+    
+</div>
+
+<div  class="footer">
+ <a href="index.html"><img src="images/home.png" width="20%"/></a><a href="information.html"><img src="images/information_selected.png" width="20%"/></a><a href="fire.html"><img src="images/firedepartment.png" width="20%" /></a><a href="efimeries.html"><img src="images/farma.png" width="20%"/></a><a href="about.html"><img src="images/site.png" width="20%"/></a> 
+</div>
+</body>
+</html>
+
+
+
